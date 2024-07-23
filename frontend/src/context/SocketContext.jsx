@@ -15,7 +15,7 @@ export const SocketContextProvider = ({ children }) => {
 
 	useEffect(() => {
 		if (authUser) {
-			const socket = io("http://localhost:5500", {
+			const socket = io("https://talk-a-tive-375w.onrender.com", {
 				query: {
 					userId: authUser._id,
 				},
