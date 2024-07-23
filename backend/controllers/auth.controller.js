@@ -1,6 +1,6 @@
 import User from '../models/user.model.js'
 import bodyParser from 'body-parser';
-import bcrypt from 'bcrypt'
+import bcrypt from 'bcryptjs'
 import generateToken from '../utils/generateJWT.js';
 
 export const signUp= async(req,res)=>{
